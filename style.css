@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+
+
+@keyframes marquee {
+    0% {text-indent: 430px}
+    100% {text-indent: -485px}
+}
+
+@-webkit-keyframes marquee {
+    0%   { text-indent: 430px }
+    100% { text-indent: -485px }
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 9s linear infinite;
+    -webkit-animation: marquee 9s linear infinite;
+}
+
+.marquee:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.marquee {
+    font-family: 'Abril Fatface', 'cursive';
+    font-size: 48px;
+    color: yellow;
+    overflow: hidden;
+}
